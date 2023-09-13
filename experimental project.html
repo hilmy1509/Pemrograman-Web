@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pemesanan Makanan</title>
+    <!-- Tambahkan CSS Anda di sini untuk desain dan warna -->
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .menu {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            text-align: left;
+            margin: 20px;
+            width: 300px;
+            float: left;
+        }
+
+        .menu h2 {
+            color: #ff6600;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        label {
+            display: inline-block;
+            width: 80%;
+        }
+
+        .pesan-btn {
+            background-color: #ff6600;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .pesan-btn:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pemesanan Makanan</h1>
+    
+    <!-- Daftar menu bagian atas -->
+    <div class="menu">
+        <h2>Menu Hemat :</h2>
+        <ul>
+            <li><label><input type="checkbox" name="menu" value="Hemat 1"> Hemat 1 - 15k</label></li>
+            <li><label><input type="checkbox" name="menu" value="Hemat 2"> Hemat 2 - 15k</label></li>
+            <li><label><input type="checkbox" name="menu" value="Hemat 3"> Hemat 3 - 15k</label></li>
+        </ul>
+    </div>
+
+    <div class="menu">
+        <h2>Menu Reguler :</h2>
+        <ul>
+            <li><label><input type="checkbox" name="menu" value="Reguler Ayam"> Reguler Ayam - 10k</label></li>
+            <li><label><input type="checkbox" name="menu" value="Reguler Cumi"> Reguler Cumi - 10k</label></li>
+            <li><label><input type="checkbox" name="menu" value="Reguler Kulit Ayam"> Reguler Kulit Ayam - 10k</label></li>
+        </ul>
+    </div>
+
+    <div class="menu">
+        <h2>Menu Minum :</h2>
+        <ul>
+            <li><label><input type="checkbox" name="menu" value="Es Teh"> Es Teh - 3k</label></li>
+            <li><label><input type="checkbox" name="menu" value="Thai Tea"> Thai Tea - 5k</label></li>
+            <li><label><input type="checkbox" name="menu" value="Air Mineral"> Air Mineral - 3k</label></li>
+        </ul>
+    </div>
+
+    <!-- Daftar menu bagian bawah -->
+    <div class="menu">
+        <h2>Tebus Murah :</h2>
+        <ul>
+            <li><label><input type="checkbox" name="menu" value="Nasi + Ayam + Es Teh"> Ayam + Es Teh - 13k</label></li>
+            <li><label><input type="checkbox" name="menu" value="Nasi + Ayam + Sosis"> Ayam + Sosis - 13k</label></li>
+            <li><label><input type="checkbox" name="menu" value="Nasi + Ayam + Odeng"> Ayam + Odeng - 13k</label></li>
+        </ul>
+    </div>
+
+    <div class="menu">
+        <h2>Snack :</h2>
+        <ul>
+            <li><label><input type="checkbox" name="menu" value="Jamur Enoki"> Jamur Enoki - 8k</label></li>
+            <li><label><input type="checkbox" name="menu" value="Odeng"> Odeng - 8k</label></li>
+            <li><label><input type="checkbox" name="menu" value="Sosis"> Sosis - 8k</label></li>
+        </ul>
+    </div>
+
+    <!-- Instruksi Pesanan -->
+    <div class="menu">
+        <h2>Instruksi Pesanan :</h2>
+        <form action="#">
+            <textarea rows="2,5" cols="40" placeholder="Tuliskan instruksi pesanan Anda di sini..."></textarea><br>
+            <input type="submit" class="pesan-btn" value="Pesan Sekarang">
+        </form>
+    </div>
+</body>
+</html>
